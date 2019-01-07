@@ -14,7 +14,7 @@
 	<li><a [attr.aria-current]="ariaCurrent1" (click)="onRoute($event)" routerLink="/component1">component 1</a></li>
 <li><a [attr.aria-current]="ariaCurrent2" (click)="onRoute($event)" routerLink="/component2">component 2</a></li>
 <li><a [attr.aria-current]="ariaCurrent3" (click)="onRoute($event)" routerLink="/component3">component 3</a></li>
-<li><a [attr.aria-current]="ariaCurrent4" (click)="onRoute($event)" routerLink="/component4">component 4</a></li>
+<li><a *ngIf="showRoutingLink4" [attr.aria-current]="ariaCurrent4" (click)="onRoute($event)" routerLink="/component4">component 4</a></li>
 </ul>
 
 <router-outlet></router-outlet>

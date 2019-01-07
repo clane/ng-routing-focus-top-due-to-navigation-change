@@ -10,6 +10,8 @@ export class AppComponent {
 
 constructor(private routingSignalService: RoutingSignalService) { }
 
+  showRoutingLink4: boolean = true;
+
 	@ViewChild('top') elementToFocusAfterRouting;
 
   ariaCurrent1:string = null;
