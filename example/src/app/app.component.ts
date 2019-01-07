@@ -10,7 +10,7 @@ export class AppComponent {
 
 constructor(private routingSignalService: RoutingSignalService) { }
 
-  showRoutingLink4: boolean = true;
+  showRoutingLink4: boolean = false;
 
 	@ViewChild('top') elementToFocusAfterRouting;
 
@@ -45,15 +45,20 @@ constructor(private routingSignalService: RoutingSignalService) { }
 
     if (componentName === "component 1") {
         this.ariaCurrent1 =  "page"; 
+				this.showRoutingLink4 = false;
     } 
     if (componentName === "component 2") {
         this.ariaCurrent2 =  "page"; 
+				this.showRoutingLink4 = false;
     }
     if (componentName === "component 3") {
         this.ariaCurrent3 =  "page"; 
+				this.showRoutingLink4 = true;
+				alert('now you will see a link to component 4 in the global navigation');
     }
     if (componentName === "component 4") {
         this.ariaCurrent4 =  "page"; 
+				this.showRoutingLink4 = false;
     }
  }
 
