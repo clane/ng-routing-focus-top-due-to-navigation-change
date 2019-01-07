@@ -1,0 +1,22 @@
+
+<div id="root">
+
+<div id="top" #top tabindex="-1">Top of component</div>
+<h1>Angular - moving focus to the top after routing due to a change in the global navigation</h1>
+
+<ul>
+	<li><span>Github URL:&nbsp;</span><a href="https://github.com/clane/ng-routing-focus-top-due-to-navigation-change">https://github.com/clane/ng-routing-focus-top-due-to-navigation-change</a></li>
+	<li><span>Hosting URL:&nbsp;</span><a href=""></a></li>
+</ul>
+
+
+<ul role="navigation">
+	<li><a [attr.aria-current]="ariaCurrent1" (click)="onRoute($event)" routerLink="/component1">component 1</a></li>
+<li><a [attr.aria-current]="ariaCurrent2" (click)="onRoute($event)" routerLink="/component2">component 2</a></li>
+<li><a [attr.aria-current]="ariaCurrent3" (click)="onRoute($event)" routerLink="/component3">component 3</a></li>
+<li><a [attr.aria-current]="ariaCurrent4" (click)="onRoute($event)" routerLink="/component4">component 4</a></li>
+</ul>
+
+<router-outlet></router-outlet>
+
+</div> 
